@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: "Inter";
+        src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("ttf-variations");
+        src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("ttf") tech("variations");
+        font-weight: 100 1000;
+        font-stretch: 25% 151%;
+      }
+      @theme {
+        --font-inter: "Inter", sans-serif;
+        --color-white: hsl(0, 0%, 100%);
+        --color-grey-700:hsl(0, 0%, 20%);
+        --color-grey-800:hsl(0, 0%, 12%);
+        --color-grey-900:hsl(0, 0%, 8%);
+        --color-leaf: hsl(75, 94%, 57%);
+      }
+    </style>
+  </head>
+  <body class="bg-grey-900 text-center text-white font-inter">
+    <main class="grid h-screen place-content-center">
+      <article class="flex flex-col rounded-xl bg-grey-800 p-10 mx-auto">
+        <img
+          class="mx-auto size-27 rounded-full"
+          src="https://sociallinksprofile-frontendmentor.netlify.app/assets/images/avatar-jessica.jpeg"
+          alt=""
+          srcset=""
+        />
+        <div class="my-6 space-y-2">
+          <h1 class="text-3xl font-bold">Jessica Randall</h1>
+          <h2 class="font-semibold text-leaf">London, United Kingdom</h2>
+        </div>
+        <p class="mb-6">"Front-end developer and avid reader."</p>
+        <div class="flex w-76 flex-col gap-4">
+          <a
+            class="transition-all duration-300 active:bg-leaf active:text-grey-700 hover:bg-leaf hover:text-grey-700 rounded-lg bg-grey-700 py-3 font-bold"
+            href="#"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+          <a
+            class="transition-all duration-300 active:bg-leaf active:text-grey-700 hover:bg-leaf hover:text-grey-700 rounded-lg bg-grey-700 py-3 font-bold"
+            href="#"
+            rel="noopener noreferrer"
+            >Frontend Mentor</a
+          >
+          <a
+            class="transition-all duration-300 active:bg-leaf active:text-grey-700 hover:bg-leaf hover:text-grey-700 rounded-lg bg-grey-700 py-3 font-bold"
+            href="#"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            class="transition-all duration-300 active:bg-leaf active:text-grey-700 hover:bg-leaf hover:text-grey-700 rounded-lg bg-grey-700 py-3 font-bold"
+            href="#"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+          <a
+            class="transition-all duration-300 active:bg-leaf active:text-grey-700 hover:bg-leaf hover:text-grey-700 rounded-lg bg-grey-700 py-3 font-bold"
+            href="#"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </div>
+      </article>
+      <div class="absolute inset-x-0 bottom-6 text-gray-500">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" class="animate-pulse text-leaf">FernDev ♥</a>.
+      </div>
+    </main>
+  </body>
+</html>
